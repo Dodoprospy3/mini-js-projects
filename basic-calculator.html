@@ -10,12 +10,9 @@
 
         <div style="margin-bottom: 20px; margin-top: 20px;">
 
-            <label style="border: solid; margin: 12px;" > <input  type="radio" name="operation" value="+"> + </label>
-
+            <label style="border: solid; margin: 12px;"> <input  type="radio" name="operation" value="+"> + </label>
             <label style="border: solid; margin: 12px;"> <input  type="radio" name="operation" value="-"> - </label>
-
             <label style="border: solid; margin: 12px;"> <input  type="radio" name="operation" value="*"> * </label>
-
             <label style="border: solid; margin: 12px;"> <input  type="radio" name="operation" value="/"> / </label>
 
         </div>
@@ -37,8 +34,7 @@
 
         <button onclick="
                 calculate();
-            ">calculate</button>
-
+            ">calculate</button> 
         <script>
 
             const inputElement1 = document.querySelector('.input1');
@@ -65,8 +61,6 @@
                 } else {
                     outputElement.value = input1_VAR + input2_VAR;
                 }
-
-
             }
 
         </script>

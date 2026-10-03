@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Number Checker</title>
+    </head>
+
+    <body>
+
+        <h1>Number Checker</h1>
+
+        <input class="numberInput" type="number">
+
+        <button 
+            class="checkButton">
+            Check Number
+        </button>
+
+        <div class="result"></div>
+
+        <script>
+
+            const inputElement = document.querySelector('.numberInput');
+            const buttonElement = document.querySelector('.checkButton');
+            const resultElement = document.querySelector('.result');
+
+            // fill the function with code that sees if the input is positive, negative, or zero
+            function checkNumber() {
+                
+            }
+
+            // Create a function that takes two numbers,
+            // adds them together, and displays the result.
+            function addNumbers(a, b) {
+                const result = a + b;
+                resultElement.textContent = result;
+            }
+
+            buttonElement.addEventListener('click', checkNumber);
+
+        </script>
+
+    </body>
+</html>

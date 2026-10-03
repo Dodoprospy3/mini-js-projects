@@ -5,6 +5,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
         <title>Calculator</title>
+
         <style> 
             * {
                 font-family: "Space Grotesk", Arial;
@@ -35,8 +36,8 @@
                 border-radius: 58px;
                 box-shadow:
                     inset 4px 4px 13px rgba(255, 255, 255, 0.7),
-                    inset 12px -8px 9px rgba(0, 0, 0, 0.15),
-                    0 8px 25px rgba(0, 0, 0, 0.2);
+                inset 12px -8px 9px rgba(0, 0, 0, 0.15),
+                0 8px 25px rgba(0, 0, 0, 0.2);
             }
 
             .calc-output {
@@ -54,8 +55,8 @@
                 white-space: nowrap;
                 box-shadow:
                     inset 0 6px 8px rgba(255, 255, 255, 0.7),
-                    inset 0 -6px 18px rgba(0, 0, 0, 0.15),
-                    0 8px 25px rgba(0, 0, 0, 0.2);
+                inset 0 -6px 18px rgba(0, 0, 0, 0.15),
+                0 8px 25px rgba(0, 0, 0, 0.2);
             }
 
             .js-output {
@@ -64,39 +65,39 @@
             }
 
             .number-button {
-                   width: 100px;
-                   height: 97px;
-                   margin: 6px;
-                   padding: 0;
+                width: 100px;
+                height: 97px;
+                margin: 6px;
+                padding: 0;
 
-                   border-radius: 50%;
-                   border: 1px solid rgba(255, 255, 255, 0.3);
+                border-radius: 50%;
+                border: 1px solid rgba(255, 255, 255, 0.3);
 
-                   background-color: rgb(173, 121, 57);
-                   color: white;
+                background-color: rgb(173, 121, 57);
+                color: white;
 
-                   font-size: 32px;
-                   font-weight: 500;
+                font-size: 32px;
+                font-weight: 500;
 
-                   cursor: pointer;
-                   user-select: none;
+                cursor: pointer;
+                user-select: none;
 
-                   transition:
-                       filter 0.1s ease,
-                       box-shadow 0.1s ease,
-                       transform 0.1s ease;
+                transition:
+                    filter 0.1s ease,
+                box-shadow 0.1s ease,
+                transform 0.1s ease;
 
-                   box-shadow:
-                       inset 3px 3px 5px rgba(255, 255, 255, 0.35),
-                       inset -3px -3px 6px rgba(0, 0, 0, 0.2),
-                       0 5px 15px rgba(0, 0, 0, 0.25); 
+            box-shadow:
+                inset 3px 3px 5px rgba(255, 255, 255, 0.35),
+            inset -3px -3px 6px rgba(0, 0, 0, 0.2),
+            0 5px 15px rgba(0, 0, 0, 0.25); 
             }
 
             .number-button:hover {
                 filter: brightness(90%);
                 box-shadow:
                     inset -3px -3px 5px rgba(255, 255, 255, 0.35),
-                    inset 3px 3px 6px rgba(0, 0, 0, 0.2);
+                inset 3px 3px 6px rgba(0, 0, 0, 0.2);
             }
 
             .number-button:active {
@@ -112,8 +113,8 @@
                 border: 1px solid rgba(255, 255, 255, 0.3);
                 box-shadow:
                     inset 3px 3px 5px rgba(255, 255, 255, 0.35),
-                    inset -3px -3px 6px rgba(0, 0, 0, 0.2),
-                    0 5px 15px rgba(0, 0, 0, 0.25);
+                inset -3px -3px 6px rgba(0, 0, 0, 0.2),
+                0 5px 15px rgba(0, 0, 0, 0.25);
             }
 
             .command-button {
@@ -124,8 +125,8 @@
                 border: 1px solid rgba(255, 255, 255, 0.3);
                 box-shadow:
                     inset 3px 3px 5px rgba(255, 255, 255, 0.35),
-                    inset -3px -3px 6px rgba(0, 0, 0, 0.2),
-                    0 5px 15px rgba(0, 0, 0, 0.25);
+                inset -3px -3px 6px rgba(0, 0, 0, 0.2),
+                0 5px 15px rgba(0, 0, 0, 0.25);
             }
 
             .short-num-button {
@@ -134,6 +135,7 @@
             }
         </style>
     </head>
+
     <body> 
         <div class="container"> 
             <div class="calc-output"> 
@@ -143,96 +145,94 @@
                 <div class="buttons-grid"> 
                     <button onclick="
                         input1 += '9';
-                    " class="number-button">9</button>
+                        " class="number-button">9</button>
+
+
+
+                    <button onclick="
+                        input1 += '8';
+                        " class="number-button">8</button>
+
+
+
+                    <button onclick="
+                        input1 += '7';
+                        " class="number-button">7</button>
 
 
 
                     <button onclick="
 
-                    " class="number-button">7</button>
+                        " class="number-button operator-button">÷</button>
+
+
+
+                    <button onclick="
+                        input1 += '6';
+                        " class="number-button">6</button>
+
+
+
+                    <button onclick="
+                        7
+                        " class="number-button">5</button>
 
 
 
                     <button onclick="
 
-                    " class="number-button">8</button>
+                        " class="number-button">4</button>
 
 
 
                     <button onclick="
 
-                    " class="number-button operator-button">÷</button>
+                        " class="number-button operator-button">×</button>
 
 
 
                     <button onclick="
 
-                    " class="number-button">6</button>
+                        " class="number-button">3</button>
 
 
 
                     <button onclick="
 
-                    " class="number-button">5</button>
+                        " class="number-button">2</button>
 
 
 
                     <button onclick="
 
-                    " class="number-button">4</button>
+                        " class="number-button js-1">1</button>
 
 
 
                     <button onclick="
 
-                    " class="number-button operator-button">×</button>
+                        " class="number-button operator-button">-</button>
 
 
 
                     <button onclick="
 
-                    " class="number-button">3</button>
+                        " class="number-button command-button">=</button>
 
 
 
                     <button onclick="
 
-                    " class="number-button">2</button>
-
-
-
-                    <button onclick="
-                        
-                    " class="number-button js-1">1</button>
-
-
-
-                    <button onclick="
-
-                    " class="number-button operator-button">-</button>
-                    
-
-
-                    <button onclick="
-
-                    " class="number-button command-button">=</button>
-
-
-
-                    <button onclick="
-
-                    " class="number-button command-button short-num-button">AC</button>
+                        " class="number-button command-button short-num-button">AC</button>
 
 
 
                     <button onclick="
                         " class="command-button short-num-button number-button">+</button>
 
-                     
+
                     <button onclick="
-                        console.log(input1);
-                        console.log(input2);
-                        console.log(operation);
+
                         ">log inputArray</button>
                 </div>
             </div>
@@ -240,12 +240,9 @@
         <script> 
 
             let input1 = '';
-            let operation = '';
             let input2 = '';
-            
-              
-                
-                
+            let output = '';
+
         </script>
     </body>
 </html>
