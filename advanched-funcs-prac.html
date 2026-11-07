@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <title>Website</title>
+    </head>
+
+    <body> 
+        <button class="butt" onclick="
+            startToFinished();
+        ">Start</button>
+
+        <script>
+            let messages = 0;
+            let titleDefaultText = 'Website';
+            const buttonDOM = document.querySelector('.butt');
+
+            function startToFinished() {
+                setTimeout(
+                    () => {
+                        if (buttonDOM.textContent === 'Start') {
+                            buttonDOM.textContent = 'Finished!';
+                            messages++
+                            document.head.querySelector('title').textContent = `${messages} NEW MESSAGES`;
+                            setTimeout(() => {
+                                buttonDOM.textContent = 'Start';
+                                document.head.querySelector('title').textContent = titleDefaultText;
+                            }, 800)
+                            
+                        } else {
+                            return;
+                        };
+
+                    }, 1000);
+            };
+        </script>
+    </body>
+</html>

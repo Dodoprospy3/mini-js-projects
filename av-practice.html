@@ -1,51 +1,7 @@
 <!DOCTYPE html> 
 <html> 
-    <head> 
-    </head>
-
+    <head></head>
     <body> 
-        <h1>Stopwatch</h1>
-
-        <hr>
-        <br>
-
-        <h3>The Greatest Stopwatch program you will ever use</h3>
-        <p>This simple program is definitely not coded in 6 hours</p>
-
-        <button onclick="
-            if (buttonIsOn === false) {
-                buttonIsOn = true;
-            } else {
-                return;
-            };
-            checkStartButtonIsOn()
-        ">start</button>
-
-        <button onclick="
-            buttonIsOn = false;
-            checkStartButtonIsOn(); 
-        ">stop</button>
-
-        <br>
-
-        <div class="timeOutput"></div>
-
-        <script>
-            let time = 0;
-            let buttonIsOn = false;
-            let intervalIdStopwatch;
-            let intervalIdOutput;
-
-            function checkStartButtonIsOn() {
-                if (buttonIsOn === true) {
-                    intervalIdStopwatch = setInterval(function() {time = time + 1}, 100);
-                    intervalIdOutput= setInterval(function() {document.querySelector('.timeOutput').innerHTML = time}, 100);
-                } else if (buttonIsOn === false) {
-                    clearInterval(intervalIdStopwatch);
-                    clearInterval(intervalIdOutput);
-                };
-            };
-        </script>
+        <p>this is my first website</p>
     </body>
-
 </html>
